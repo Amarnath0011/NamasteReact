@@ -1,19 +1,21 @@
+body{
+    background-color: #121212;
+
+}
 h1{
 
-    color:red;
+    color:white;
     text-align: center;
-    background-color: aqua;
+    background-color: grey;
     padding:10px;
     border-radius: 20px;
-    width: 50%;
 }
+
 h2{
 
-    color:red;
+    color:white;
     text-align: center;
-    background-color: aqua;
+    background-color: grey;
     padding:10px;
     border-radius: 20px;
-    width: 50%;
-
 }
