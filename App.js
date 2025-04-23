@@ -55,8 +55,40 @@ const parent = React.createElement("div",
 
 )]
 );
+// This is core react ,but due to clumsy of code  facebook introduced 
+// JSX 
+//JSX (transpiling before it reaches the JS)-PARCEL -Babel
+
+//JSX => React.createElement =>ReactElement - JS Object => HTML Element
+//Babel is converting/transpiling JSX in to react.createElement 
+const jsxHeading = <h1 id = "heading ">NamasteReact🚀 using Jsx</h1>
+
+//jsx is not HTML in javaScript , Jsx is different it is HTML or XML like 
+//syntax.
+// console.log(heading)
+console.log(jsxHeading)
 
 // console.log(parent)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+//React Component
+//Class Based Component - OLD
+//Functional Component - NEW :- function which return some piece of JSX code which is transpiled into react.create using babel which runs on javascript engine
+
+//React functional component
+
+const number = 1000;
+
+const HeadingComponent = ()=>(
+ <div className="header">
+    <h2>{number+200}</h2> 
+<h1 className= "header">Hello from Functional component🚀</h1>
+</div>
+);
+console.log(HeadingComponent)
 root.render(parent)
+root.render(jsxHeading)
+root.render(<HeadingComponent />)
+
+//Component composition :- Putting one functional component in another functional component
+//(Line 84) In JSX any where you write {} YOu can write any javascript code inside this curly braces

@@ -1,6 +1,6 @@
 body{
     background-color: #121212;
-
+color :white;
 }
 h1{
 
@@ -9,6 +9,8 @@ h1{
     background-color: grey;
     padding:10px;
     border-radius: 20px;
+    width: 50%;
+
 }
 
 h2{
@@ -18,4 +20,5 @@ h2{
     background-color: grey;
     padding:10px;
     border-radius: 20px;
+    width: 50%;
 }
